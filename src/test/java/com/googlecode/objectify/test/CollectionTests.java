@@ -81,10 +81,9 @@ public class CollectionTests extends TestBase {
 		assert coll.getClass() == expectedClass;    // will fail with caching objectify, this is ok
 
 		assert coll.size() == 3;
-		Iterator<Integer> it = coll.iterator();
-		assert it.next() == 1;
-		assert it.next() == 2;
-		assert it.next() == 3;
+		assert coll.contains(1);
+		assert coll.contains(2);
+		assert coll.contains(3);
 	}
 
 	/** */
